@@ -3,82 +3,87 @@
 <title>CJB Valeting</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" 
-    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" 
-	crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="  crossorigin="anonymous" />
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-<script src="assets/js/main.js"></script>
 <link rel="stylesheet" href="assets/css/main.css">
+
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="assets/js/main.js"></script>
+
 <body>
-	<div class="w3-top">
-    	<div class="w3-bar" id="myNavbar">
-            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-              <i class="fa fa-bars"></i>
-    		</a>
-          <a href="#home" class="w3-bar-item w3-button"><i class="fas fa-home"></i> Home</a>
-          <a href="#pricing" class="w3-bar-item w3-button w3-hide-small"><i class="fas fa-tags"></i> Pricing</a>
-          <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> Portfolio</a>
-          <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> Contact</a>
-      </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <a class="navbar-brand" href="#">CJB Valeting</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Reviews</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
-      <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
-          <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">Pricing</a>
-          <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">Portfolio</a>
-          <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">Contact</a>
-      </div>
-  </div>
-
-<div class="header-panel w3-display-container" id="home">
-    <div class="w3-display-middle" style="white-space:nowrap;">
-        <img src="assets/images/logo.png">
-    </div>
-	<div class="chevron-middle" style="white-space:nowrap;">
-		<i class="fas fa-chevron-down chevron-down text-centre"></i>
+<div class="container">
+    <div class="row">
+        <div class="col d-flex align-items-center justify-content-center h-100 d-inline-block container" id="home">
+            <div class="w3-display-middle" style="white-space:nowrap;">
+            <img src="assets/images/logo.png">
+        </div>
+	    <div class="chevron-middle" style="white-space:nowrap;">
+    		<i class="fas fa-chevron-down chevron-down text-centre"></i>
+        </div>
     </div>
 </div>
 
-<div class="w3-display-container">
-    <div class="w3-display-middle">
-        <span class="w3-xxlarge w3-text-red">PRICING</span>
+<div class="container">
+    <div class="row">
+        <div id="pricing">
+            <div class="text-center">
+                <h1>Pricing</h1>
+                <h3>Services Provided</h3>
+                <p>- Standard Interior Clean *</p>
+                <p>- Deep Interior Clean *</p>
+
+                <table class="table table-dark">
+                    <thead>
+                        <tr>
+                            <th>Service</th>
+                            <th>Standard*</th>
+                            <th>Deep*</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Smaller Cars</td>
+                            <td>&pound;30.00</td>
+                            <td>&pound;45.00</td>
+                        </tr>
+                        <tr>
+                            <td>Larger Cars</td>
+                            <td>&pound;40.00</td>
+                            <td>&pound;55.00</td>
+                        </tr>
+                        <tr>
+                            <td>Vans</td>
+                            <td>&pound;50.00</td>
+                            <td>&pound;60.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
-</div>
-
-<div class="black-background-content" id="pricing">
-	<div class="w3-row-padding w3-center">
-		<h3>Services Provided</h3>
-		<p>- Standard Interior Clean *<br>
-		- Deep Interior Clean *</p>
-
-		<table class="table table-dark offset-md-3 col-md-6 pt-sm-10">
-			<thead>
-				<tr>
-					<th>Service</th>
-					<th>Standard*</th>
-					<th>Deep*</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>Smaller Cars</td>
-					<td>&pound;30.00</td>
-					<td>&pound;45.00</td>
-				</tr>
-				<tr>
-					<td>Larger Cars</td>
-					<td>&pound;40.00</td>
-					<td>&pound;55.00</td>
-				</tr>
-				<tr>
-					<td>Vans</td>
-					<td>&pound;50.00</td>
-					<td>&pound;60.00</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
 </div>
 
 <div class="w3-display-container">
