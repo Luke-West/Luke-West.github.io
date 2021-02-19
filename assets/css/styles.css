@@ -2466,6 +2466,10 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 0.2rem rgba(60, 198, 171, 0.5);
 }
 
+.services ul li {
+  list-style-type: none;
+}
+
 .btn-secondary {
   color: #fff;
   background-color: #2c3e50;
